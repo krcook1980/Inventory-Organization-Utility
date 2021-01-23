@@ -16,6 +16,9 @@ Great - do your work. You can push to github to your branch as a save feature:
 2) git commit -m "add a meaningful comment"
 3) git push
 
+The first time you push your branch it will have you do one more thing:
+1) Copy and paste this line git push --set-upstream origin pushAndPull
+2) then git push
 
 
 When you are finished working on that feature or branch ... MAKE SURE YOU ADD THE PULL REQUEST TO GET IT IN THERE FOR THE REST OF US!
