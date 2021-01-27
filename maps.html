@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Backyard Map</title>
+  <title>Steel Yard Map</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
 </head>
 
@@ -20,17 +20,27 @@
       <br>
       <div class="container" id="map"></div>
       <br>
-      <div class="container email">
+      <div class="container email box has-text-centered">
         <div class="select">
           <select>
-            <option>Alert Recipient</option>
-            <option>Bret's Email</option>
+            <option>Select Recipient</option>
+            <option>Bret </option>
+            <option>Jason Jorgensen</option>
           </select>
         </div>
         <br>
         <br>
-        <button class="button">Send Email</button>
+        <div class="emailBody">
+          <textarea class="textarea">Hello</textarea>
+        </div>
+        <br>
+        <button class="emailButton is-info button">Send Email</button>
+        <div class="emailNotification">
+          <p></p>
+        </div>
       </div>
+
+
       <br>
       <div class="buttons">
         <!--- Added class of pickUpBTN -->
@@ -40,6 +50,16 @@
 
     </section>
   </div>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="js/script.js"></script>
+  <script src="js/dropdown.js"></script>
+  <script src="js/email.js"></script>
+  <script src="js/mapScript.js"></script>
 </body>
 
 </html>
