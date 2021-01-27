@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Backyard Map</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-  </head>
-  <body>
-    <div class = "columns is-centered">
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        HA Fabricators
-      </h1>
-      
-    </div>
-    <br>
-    <div class="container"id = "map"></div>
-    <br>
-    <div class="container email">
-      <div class="select">
-        <select>
-          <option>Alert Recipient</option>
-          <option>Bret's Email</option>
-        </select>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Backyard Map</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</head>
+
+<body>
+  <div class="columns is-centered">
+    <section class="section">
+      <div class="container">
+        <h1 class="title">
+          HA Fabricators
+        </h1>
+
       </div>
       <br>
-      <button class="button">Send Email</button>
+      <div class="container" id="map"></div>
+      <br>
+      <div class="container email">
+        <div class="select">
+          <select>
+            <option>Alert Recipient</option>
+            <option>Bret's Email</option>
+          </select>
+        </div>
+        <br>
+        <br>
+        <button class="button">Send Email</button>
+      </div>
+      <br>
+      <div class="buttons">
+        <!--- Added class of pickUpBTN -->
+        <button class="button is-danger pickUpBTN" onclick="window.location.href = 'index.html'">Back</button>
       </div>
 
-  </section>
+
+    </section>
   </div>
-  </body>
+</body>
+
 </html>

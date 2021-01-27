@@ -10,66 +10,85 @@
 
 <body>
     <div class="columns is-centered">
-    <section class="section">
-        <h1 class="title">
-            HA Fabricators
-        </h1>
-        <p class="subtitle">
-            
-        </p>
-        <p>Material</p>
-        <div class="select" >
-            
-            <select  class="selectType " name="type">                
-                <option>Select Option</option>
-                <option value="Tubing">Tubing</option>
-                <option value="Plate">Plate</option>
-                <option value="Angle">Angle</option>
-            </select>
-        </div>
-        <p>Width</p>
-        <div class="select" >
-            <select  class="selectWidth" name="type">
-                <option>...</option>
-                
+        <section class="section">
+            <h1 class="title">
+                HA Fabricators
+            </h1>
+            <p class="subtitle">
+
+            </p>
+            <p>Material</p>
+            <div class="select">
+                <!-- added class materials for dropdown.js -->
+                <select class="selectType materials" name="type">
+                    <option>Select Option</option>
+                    <option value="Tubing">Tubing</option>
+                    <option value="Plate">Plate</option>
+                    <option value="Angle">Angle</option>
                 </select>
             </div>
-            
-            <div id = "thick" class="is-hidden">
-                <p>Plate thickness</p>
-            <div class="select" >
-               
-                <select  class="selectThick" name="type">
+            <br><br>
+            <p>Width</p>
+            <div class="select">
+                <select class="selectWidth" name="type">
                     <option>...</option>
-                    
+
+                </select>
+            </div>
+
+            <br>
+            <div id="thick" class="is-hidden">
+                <br>
+                <p>Plate thickness</p>
+                <div class="select">
+
+                    <select class="selectThick plateThickness" name="type">
+                        <option>...</option>
+
                     </select>
                 </div>
-            </div>   
-                
-                    
-                </select>
-                <br><br>
-                <div class="buttons">
-                        <button class="button is-primary">Pick Up</button>  
-                        <button class="button is-primary">Drop Off</button>                   
-                    </div>
+            </div>
+            <br><br>
+
+            <span class="is-size-9">
+                Quantity
+            </span>
+            <div class="field">
+                <div class="control">
+                    <input class="input is-primary quantityInput" type="text" placeholder="Enter your input">
+                </div>
+            </div>
+            <br>
 
 
+
+            </select>
+
+            <div class="buttons">
+                <!--- Added class of pickUpBTN -->
+                <button class="button is-primary pickUpBTN" onclick="window.location.href = 'maps.html'">Pick
+                    Up</button>
+                <!--- Added class of dropOffUpBTN -->
+                <button class="button is-primary dropOffBTN" onclick="window.location.href = 'maps.html'">Drop
+                    Off</button>
             </div>
-      
-            </div>
-        </div>
-        </div>
-        
+
+
+    </div>
+
+    </div>
+    </div>
+    </div>
+
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-        <script src="js/script.js"></script>
-        <script src="js/dropdown.js"></script>
-        <script src="js/email.js"></script>
-        <script src ="js/mapScript.js"></script>
-    </body>
-    
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/email.js"></script>
+    <script src="js/mapScript.js"></script>
+</body>
+
 </html>
