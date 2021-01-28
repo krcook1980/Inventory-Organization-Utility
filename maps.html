@@ -7,66 +7,98 @@
   <title>Steel Yard Map</title>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH47L5JoL0s99j-wuu0YcDYYWguP-k0Wk&callback=initMap&libraries=&v=weekly"
-      defer
-    ></script>
-    <link rel="stylesheet" type="text/css" href="css/mapStyle.css" />
-    <script src="js/map.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH47L5JoL0s99j-wuu0YcDYYWguP-k0Wk&callback=initMap&libraries=&v=weekly"
+    defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="css/mapStyle.css" />
+  <script src="js/map.js"></script>
 
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  
 </head>
 
 <body>
-  <div class="columns is-centered">
-    <section class="section">
-      <div class="container">
-        <h1 class="title">
-          HA Fabricators
-        </h1>
-
-      </div>
-      <br>
-      <div class="column is-full" id="map"></div>
-      <br>
-      <div class="container email box has-text-centered">
-        <div class="select">
-          <select class= "recipient" >
-            <option>Select Recipient</option>
-            <option value="Bret">Bret </option>
-            <option value="Jason">Jason Jorgensen</option>
-          </select>
+  
+    <section class="mx-6">
+      <section class="hero is-info">
+        <div class="hero-body">
+          <p class="title has-text-centered">
+            HA Fabricators
+          </p>
         </div>
-        <br>
-        <br>
-        <div class="emailBody">
-          <textarea class="textarea emailBody"></textarea>
+      </section>
+
+      <section class="hero is-medium is-info">
+        <div class="hero-body"  id="map">
         </div>
-        <br>
-        <button class="emailButton is-info button">Send Email</button>
-        <div class="emailNotification">
-          <br>
-          <p></p>
-        </div>
-      </div>
+      </section>
 
+      <section>
+        <div class="columns">
+          <div class="column">
+          <!--empty column-->  
+          </div>
+          <div class="column is-half has-text-centered">
+            <div><br></div>
+           <div id="location"></div>
+          <br>       
+          </div>
+          <div class="column">
+            <!--empty column--> 
+          </div>
 
-      <br>
-      <div class="buttons">
-        
-        <button class="button is-danger pickUpBTN" onclick="window.location.href = 'index.html'">Back</button>
-      </div>
+        </div>  
+      </section>
 
+      <section>
+        <div class="columns">
+          <div class="column">
+           <!--empty column-->  
+          </div>
+          <div class="column is-half has-text-centered">
+            <div class="container email box has-text-centered">
+              <div class="select">
+                <select class="recipient">
+                  <option>Select Recipient</option>
+                  <option value="Bret">Bret </option>
+                  <option value="Jason">Jason Jorgensen</option>
+                </select>
+              </div>
+              <br>
+              <br>
+              <div class="emailBody">
+                <textarea class="textarea emailBody"></textarea>
+              </div>
+              <br>
+              <button class="emailButton is-info button">Send Email</button>
+              <div><br></div>
+              <button class="button has-background-info-light pickUpBTN" onclick="window.location.href = 'index.html'">Back</button>
+              
+              <div class="emailNotification">
+                <br>
+                <p></p>
+                
+              </div>
+              
+            </div>
+            <br>
+     
+          </div>
+          <div class="column">
+            <!--empty column--> 
+          </div>
 
+        </div>  
+      </section>
     </section>
-  </div>
+  
 
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="js/script.js"></script>
   <script src="js/dropdown.js"></script>
   <script src="js/email.js"></script>
