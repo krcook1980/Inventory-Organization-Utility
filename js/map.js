@@ -1,6 +1,7 @@
 var type = localStorage.getItem("materialChoice");
 var width = localStorage.getItem("width");
 var thick = localStorage.getItem("plateThickness");
+var l = "";
 
 function initMap() {
   //const HAFab= { lat: 41.77940390613934, lng:-111.84216570289617 };
@@ -216,7 +217,9 @@ else if(type == "Angle" && width == "4"){
 }
 
 else if(type=="Plate" && width=="5"){
+  
   if(thick==".25"){
+    l = "E1";
     const marker1 = new google.maps.Marker({
       position: { lat: 41.78064, lng: -111.84208, },
       map: map,
@@ -225,6 +228,7 @@ else if(type=="Plate" && width=="5"){
 
   }
   if(thick==".5"){
+    l = "E2";
     const marker1 = new google.maps.Marker({
       position: { lat: 41.78044, lng: -111.84208, },
       map: map,
@@ -232,17 +236,19 @@ else if(type=="Plate" && width=="5"){
       });
   }
   if(thick==".75"){
+    l = "E3";
     const marker1 = new google.maps.Marker({
       position: { lat: 41.78024, lng: -111.84208, },
       map: map,
       title: "E3",
       });
   }
-  $("#location").text("Found in " + title);
+  $("#location").text("Found in " + l);
 }
 
 else if(type=="Plate" && width=="6"){
   if(thick==".25"){
+    l = "F1";
     const marker1 = new google.maps.Marker({
       position: { lat: 41.78064, lng: -111.84223, },
       map: map,
@@ -251,6 +257,7 @@ else if(type=="Plate" && width=="6"){
 
   }
   if(thick==".5"){
+    l = "F2";
     const marker1 = new google.maps.Marker({
       position: { lat: 41.78044, lng: -111.84223, },
       map: map,
@@ -258,17 +265,19 @@ else if(type=="Plate" && width=="6"){
       });
   }
   if(thick==".75"){
+    l = "F3";
     const marker1 = new google.maps.Marker({
       position: { lat: 41.78024, lng: -111.84223, },
       map: map,
       title: "F3",
       });
   }
-  $("#location").text("Found in " + title);
+  $("#location").text("Found in " + l);
 }
 
 else if(type=="Plate" && width=="8"){
   if(thick==".25"){
+    l = "G1";
     const marker1 = new google.maps.Marker({
       position: { lat: 41.78064, lng: -111.84228, },
       map: map,
@@ -277,6 +286,7 @@ else if(type=="Plate" && width=="8"){
 
   }
   if(thick==".5"){
+    l = "G2";
     const marker1 = new google.maps.Marker({
       position: { lat: 41.78044, lng: -111.84228, },
       map: map,
@@ -284,17 +294,19 @@ else if(type=="Plate" && width=="8"){
       });
   }
   if(thick==".75"){
+    l = "G3";
     const marker1 = new google.maps.Marker({
       position: { lat: 41.78024, lng: -111.84228, },
       map: map,
       title: "G3",
       });
   }
-  $("#location").text("Found in " + title);
+  $("#location").text("Found in " + l);
 }
 
 else if(type=="Plate" && width=="12"){
   if(thick==".25"){
+    l = "H1";
     const marker1 = new google.maps.Marker({
       position: { lat: 41.78064, lng: -111.84243, },
       map: map,
@@ -303,6 +315,7 @@ else if(type=="Plate" && width=="12"){
 
   }
   if(thick==".5"){
+    l = "H2";
     const marker1 = new google.maps.Marker({
       position: { lat: 41.78044, lng: -111.84243, },
       map: map,
@@ -310,13 +323,14 @@ else if(type=="Plate" && width=="12"){
       });
   }
   if(thick==".75"){
+    l = "H3";
     const marker1 = new google.maps.Marker({
       position: { lat: 41.78024, lng: -111.84243, },
       map: map,
       title: "H3",
       });
   }
-  $("#location").text("Found in " + title);
+  $("#location").text("Found in " + l);
 }
 else{
   $("#location").text("No location found");
