@@ -21,7 +21,7 @@ $(".emailButton").click(function () {
     if (recipient=="Jason"){
         emailAddress = 'jasoncjorgensen@gmail.com'
     }else if (recipient=="Bret"){
-        emailAddress = ""
+        emailAddress = "kelly_cook1@msn.com"
     }
     Email.send({
         SecureToken: "8bdfc5e6-1f38-4818-a994-73f350628a8e",

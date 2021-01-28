@@ -21,15 +21,25 @@
 <body>
   
     <section class="mx-6">
-      <section class="hero is-info">
-        <div class="hero-body">
-          <p class="title has-text-centered">
-            HA Fabricators
-          </p>
+      <!--Header-->
+      <section class="hero is-info mb-4">
+        <div class="hero-body has-text-centered">
+            <figure class="image container is-64x64 mb-2">
+            <img src="https://static.wixstatic.com/media/f6fcc3_b7399850be5d401787226a741071b151~mv2.png/v1/fill/w_164,h_155,al_c,q_85,usm_0.66_1.00_0.01/f6fcc3_b7399850be5d401787226a741071b151~mv2.webp" alt="company logo">
+            </figure>
+            <p class="title">
+                
+                HA Fabricators
+            </p>
+            <p class="subtitle">
+                349 W 2500 N, North Logan, UT 84341  |  (435) 750-5050  |  hafabsteel.net
+            </p>
         </div>
-      </section>
+    </section>
 
-      <section class="hero is-medium is-info">
+      <!-- Section for map -->
+      <section class="hero is-medium is-info mx-6 mb-4">
+        
         <div class="hero-body"  id="map">
         </div>
       </section>
@@ -39,9 +49,11 @@
           <div class="column">
           <!--empty column-->  
           </div>
-          <div class="column is-half has-text-centered">
+          <div class="column is-half has-text-centered has-text-weight-bold">
             <div><br></div>
-           <div id="location"></div>
+           <div id="location">
+             <!-- location text here -->
+            </div>
           <br>       
           </div>
           <div class="column">
@@ -51,24 +63,24 @@
         </div>  
       </section>
 
+      <!-- section for email -->
       <section>
         <div class="columns">
           <div class="column">
            <!--empty column-->  
           </div>
-          <div class="column is-half has-text-centered">
-            <div class="container email box has-text-centered">
-              <div class="select">
+          <div class="column is-one-third has-text-centered mb-6">
+            <div class="container email box has-text-centered ">
+              <div class="select mb-6">
                 <select class="recipient">
                   <option>Select Recipient</option>
                   <option value="Bret">Bret </option>
                   <option value="Jason">Jason Jorgensen</option>
                 </select>
               </div>
-              <br>
-              <br>
-              <div class="emailBody">
-                <textarea class="textarea emailBody"></textarea>
+             
+              <div class="emailBody mb-4">
+                <textarea class="textarea emailBody px-6"></textarea>
               </div>
               <br>
               <button class="emailButton is-info button">Send Email</button>
@@ -76,8 +88,10 @@
               <button class="button has-background-info-light pickUpBTN" onclick="window.location.href = 'index.html'">Back</button>
               
               <div class="emailNotification">
-                <br>
-                <p></p>
+               
+                <p>
+                  <!-- email text goes here -->
+                </p>
                 
               </div>
               
