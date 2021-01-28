@@ -3,8 +3,8 @@ var width = localStorage.getItem("width");
 var thick = localStorage.getItem("plateThickness");
 var l = "";
 
+//this is the function that makes the map
 function initMap() {
-  //const HAFab= { lat: 41.77940390613934, lng:-111.84216570289617 };
 
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 18,
@@ -12,6 +12,7 @@ function initMap() {
     mapTypeId: "roadmap",
   });
   
+  //code for each individual rack
   const rectangleA = new google.maps.Rectangle({
     strokeColor: "#454773",
     strokeOpacity: 0.8,
@@ -130,6 +131,7 @@ function initMap() {
     },
   });
 
+  //logic statements that control where the markers are created.
 if(type == "Tubing" && width == "3"){
   const marker1 = new google.maps.Marker({
     position: { lat: 41.78064, lng: -111.84167 },
