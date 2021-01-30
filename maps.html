@@ -10,103 +10,106 @@
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH47L5JoL0s99j-wuu0YcDYYWguP-k0Wk&callback=initMap&libraries=&v=weekly"
     defer></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
   <link rel="stylesheet" type="text/css" href="css/mapStyle.css" />
   <script src="js/map.js"></script>
 
 
-  
+
 </head>
 
 <body>
-  
-    <section class="mx-6">
-      <!--Header-->
-      <section class="hero is-info mb-4">
-        <div class="hero-body has-text-centered">
-            <figure class="image container is-64x64 mb-2">
-            <img src="https://static.wixstatic.com/media/f6fcc3_b7399850be5d401787226a741071b151~mv2.png/v1/fill/w_164,h_155,al_c,q_85,usm_0.66_1.00_0.01/f6fcc3_b7399850be5d401787226a741071b151~mv2.webp" alt="company logo">
-            </figure>
-            <p class="title">
-                
-                HA Fabricators
-            </p>
-            <p class="subtitle">
-                349 W 2500 N, North Logan, UT 84341  |  (435) 750-5050  |  hafabsteel.net
-            </p>
-        </div>
+
+  <section class="mx-6">
+    <!--Header-->
+    <section class="hero is-info mb-4">
+      <div class="hero-body has-text-centered">
+        <figure class="image container is-64x64 mb-2">
+          <img
+            src="https://static.wixstatic.com/media/f6fcc3_b7399850be5d401787226a741071b151~mv2.png/v1/fill/w_164,h_155,al_c,q_85,usm_0.66_1.00_0.01/f6fcc3_b7399850be5d401787226a741071b151~mv2.webp"
+            alt="company logo">
+        </figure>
+        <p class="title">
+
+          HA Fabricators
+        </p>
+        <p class="subtitle">
+          349 W 2500 N, North Logan, UT 84341 | (435) 750-5050 | hafabsteel.net
+        </p>
+      </div>
     </section>
 
-      <!-- Section for map -->
-      <section class="hero is-medium is-info mx-6 mb-4">
-        
-        <div class="hero-body"  id="map">
+    <!-- Section for map -->
+    <section class="hero is-medium is-info mx-6 mb-4">
+
+      <div class="hero-body" id="map">
+      </div>
+    </section>
+
+    <section>
+      <div class="columns">
+        <div class="column">
+          <!--empty column-->
         </div>
-      </section>
-
-      <section>
-        <div class="columns">
-          <div class="column">
-          <!--empty column-->  
+        <div class="column is-half has-text-centered has-text-weight-bold">
+          <div><br></div>
+          <div id="location" class="has-background-info-light">
+            <!-- location text here -->
           </div>
-          <div class="column is-half has-text-centered has-text-weight-bold">
-            <div><br></div>
-           <div id="location">
-             <!-- location text here -->
+          <br>
+        </div>
+        <div class="column">
+          <!--empty column-->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- section for email -->
+    <section>
+      <div class="columns">
+        <div class="column">
+          <!--empty column-->
+        </div>
+        <div class="column is-one-third has-text-centered mb-6">
+          <div class="container email box has-text-centered ">
+            <div class="select mb-6">
+              <select class="recipient">
+                <option>Select Recipient</option>
+                <option value="Bret">Bret </option>
+                <option value="Jason">Jason Jorgensen</option>
+              </select>
             </div>
-          <br>       
-          </div>
-          <div class="column">
-            <!--empty column--> 
-          </div>
 
-        </div>  
-      </section>
-
-      <!-- section for email -->
-      <section>
-        <div class="columns">
-          <div class="column">
-           <!--empty column-->  
-          </div>
-          <div class="column is-one-third has-text-centered mb-6">
-            <div class="container email box has-text-centered ">
-              <div class="select mb-6">
-                <select class="recipient">
-                  <option>Select Recipient</option>
-                  <option value="Bret">Bret </option>
-                  <option value="Jason">Jason Jorgensen</option>
-                </select>
-              </div>
-             
-              <div class="emailBody mb-4">
-                <textarea class="textarea emailBody px-6"></textarea>
-              </div>
-              <br>
-              <button class="emailButton is-info button">Send Email</button>
-              <div><br></div>
-              <button class="button has-background-info-light pickUpBTN" onclick="window.location.href = 'index.html'">Back</button>
-              
-              <div class="emailNotification">
-               
-                <p>
-                  <!-- email text goes here -->
-                </p>
-                
-              </div>
-              
+            <div class="emailBody mb-4">
+              <textarea class="textarea emailBody px-6"></textarea>
             </div>
             <br>
-     
-          </div>
-          <div class="column">
-            <!--empty column--> 
-          </div>
+            <button class="emailButton is-info button">Send Email</button>
+            <div><br></div>
+            <button class="button has-background-info-light pickUpBTN"
+              onclick="window.location.href = 'index.html'">Back</button>
 
-        </div>  
-      </section>
+            <div class="emailNotification">
+
+              <p>
+                <!-- email text goes here -->
+              </p>
+
+            </div>
+
+          </div>
+          <br>
+
+        </div>
+        <div class="column">
+          <!--empty column-->
+        </div>
+
+      </div>
     </section>
-  
+  </section>
+
 
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

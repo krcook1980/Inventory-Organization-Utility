@@ -143,7 +143,7 @@ if(type == "Tubing" && width == "3"){
       map: map,
       title: "A2",
       });
-  $("#location").text("Found in A1/A2");
+  $("#location").text(type + " found in A1/A2");
 }
 
 else if(type == "Tubing" && width == "4"){
@@ -158,7 +158,7 @@ else if(type == "Tubing" && width == "4"){
       map: map,
       title: "B3",
       });
-  $("#location").text("Found in A3/B3");
+  $("#location").text(type + " found in A3/B3");
 }
 else if(type == "Tubing" && width == "6"){
   const marker1 = new google.maps.Marker({
@@ -172,7 +172,7 @@ else if(type == "Tubing" && width == "6"){
       map: map,
       title: "B2",
       });
-  $("#location").text("Found in B1/B2");
+  $("#location").text(type + " found in B1/B2");
 }
 
 else if(type == "Angle" && width == "3"){
@@ -187,7 +187,7 @@ else if(type == "Angle" && width == "3"){
       map: map,
       title: "C2",
       });
-  $("#location").text("Found in C1/C2");
+  $("#location").text(type + " found in C1/C2");
 }
 else if(type == "Angle" && width == "4"){
   const marker1 = new google.maps.Marker({
@@ -201,7 +201,7 @@ else if(type == "Angle" && width == "4"){
       map: map,
       title: "D3",
       });
-  $("#location").text("Found in C3/D3");
+  $("#location").text(type + " found in C3/D3");
 }
 else if(type == "Angle" && width == "4"){
   const marker1 = new google.maps.Marker({
@@ -215,7 +215,7 @@ else if(type == "Angle" && width == "4"){
       map: map,
       title: "D2",
       });
-  $("#location").text("Found in D1/D2");
+  $("#location").text(type + " found in D1/D2");
 }
 
 else if(type=="Plate" && width=="5"){
@@ -245,7 +245,7 @@ else if(type=="Plate" && width=="5"){
       title: "E3",
       });
   }
-  $("#location").text("Found in " + l);
+  $("#location").text(type + " found in " + l);
 }
 
 else if(type=="Plate" && width=="6"){
@@ -274,7 +274,7 @@ else if(type=="Plate" && width=="6"){
       title: "F3",
       });
   }
-  $("#location").text("Found in " + l);
+  $("#location").text(type + " found in " + l);
 }
 
 else if(type=="Plate" && width=="8"){
@@ -303,7 +303,7 @@ else if(type=="Plate" && width=="8"){
       title: "G3",
       });
   }
-  $("#location").text("Found in " + l);
+  $("#location").text(type + " found in " + l);
 }
 
 else if(type=="Plate" && width=="12"){
@@ -332,7 +332,7 @@ else if(type=="Plate" && width=="12"){
       title: "H3",
       });
   }
-  $("#location").text("Found in " + l);
+  $("#location").text(type + " found in " + l);
 }
 else{
   $("#location").text("No location found");
