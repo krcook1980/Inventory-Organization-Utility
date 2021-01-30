@@ -1,47 +1,36 @@
-## How to use the repository
-Each time you come to work
-1) make sure you are in the main branch in terminal (gitbash or in vs Code open a new terminal)
-2) git pull (this gets all of the most recent files and work done by the team)
+# Inventory Organization Utility
+As a worker in a steel yard, I am having trouble finding material. I would like a tool to help me deliver material to the correct place when ordered, and easily find material for use later.  Any change to inventory should notify someone in the ordering department.
 
-Now before you change any file - make a working branch
-1) in the terminal type git checkout -b "nameMyBranch"
-    pick something meaningful so we can find it later if needed
-2) make sure you are in that branch (it says branch name at end of terminal)
-
-
-
-Great - do your work. You can push to github to your branch as a save feature:
-
-1) in the terminal type git add .
-2) git commit -m "add a meaningful comment"
-3) git push
-
-The first time you push your branch it will have you do one more thing:
-1) Copy and paste this line git push --set-upstream origin pushAndPull
-2) then git push
+WHEN I select a material
+THEN I will be able to select additional parameters for that material.
+WHEN I have selected the material
+THEN I should be directed to a map with the location of that material.
+WHEN I select an email recipient
+THEN an email should be generated with a list of material, parameters, quantity, and whether it is being picked up or dropped off.
+WHEN I send the email
+THEN I should be notified that the email was sent properly.
 
 
-When you are finished working on that feature or branch ... MAKE SURE YOU ADD THE PULL REQUEST TO GET IT IN THERE FOR THE REST OF US!
-Do the prior step to push the most recent work and then:
+## Functionality
 
-1) in the code you just received back is a link to create a pull request, click that link
-    IF that link is missing or whatever, go into github to the repository and you can create the pull request there
-2) The top should be Base:Main and the Compare: should be your branch name
-3) Enter any comment you think, request a specific reviewer if you want
-4) Click the Create Pull Request
+Utilized HTML, Bulma, CSS, and jQuery to create dynamic webpages that are easy to use and read. Used the [Google Maps api](https://developers.google.com/maps) as well as the []() to email the inventory department. [Inventory Organization Utility](https://krcook1980.github.io/Inventory-Organization-Utility/)
 
-In github someone will approve your pull request change and merge it to the main. IF we run into any conflicts DON'T PANIC! We can resolve them together.
+## Collaborators 
+Jared Metcalf
+Jason Jorgenson
+Kelly Cook
+Kelly Henderson
+Kelly Whiting
 
-DON'T FORGET:
-If the above completed a project task:
-1) In github, go into the project tab
-2) Click the project name
-3) find the task in the in progress list (ideally it is there because you moved it there... it might be in todo?)
-4) move the task to the done list
-5) click the task name and scroll down to check it off as done
-6) Someone else can move it to the really really done list when we agree the objective is met
+## Resources
+- [W3 Schools](https://www.w3schools.com/)
+- [Stackoverflow](https://stackoverflow.com/)
+- [freeformatter](https://www.freeformatter.com/html-validator.html)
+- [Google Maps api](https://developers.google.com/maps)
+- 
 
-
-
-
-
+## Screen shots
+Page 1
+<img src="https://github.com/krcook1980/Inventory-Organization-Utility/blob/main/assets/Pg1.jfif">
+Page 2
+<img src="https://github.com/krcook1980/Inventory-Organization-Utility/blob/main/assets/Pg2.jfif">
