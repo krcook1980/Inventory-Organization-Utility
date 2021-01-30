@@ -31,6 +31,6 @@ Kelly Whiting
 
 ## Screen shots
 Page 1
-<img src="https://github.com/krcook1980/Inventory-Organization-Utility/blob/main/assets/Pg1.jfif">
+<img src="https://github.com/krcook1980/Inventory-Organization-Utility/blob/main/assets/Pg1.JPG">
 Page 2
-<img src="https://github.com/krcook1980/Inventory-Organization-Utility/blob/main/assets/Pg2.jfif">
+<img src="https://github.com/krcook1980/Inventory-Organization-Utility/blob/main/assets/Pg2.JPG">
