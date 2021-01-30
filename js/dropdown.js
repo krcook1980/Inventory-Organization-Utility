@@ -19,7 +19,8 @@ $(document).ready(function () {
 
         } else {
             $(".selectWidth").empty();
-
+            $("#thick").removeClass("is-visible");
+            $("#thick").addClass("is-hidden");
             $(".selectWidth").append("<option value='3'>3 inch</option>");
             $(".selectWidth").append("<option value='4'>4 inch</option>");
             $(".selectWidth").append("<option value='6'>6 inch</option>");
