@@ -28,63 +28,33 @@ $(document).ready(function () {
 
     })
 
-    /////////// PICKUP BUTTON FUNCTION START ////////////
-    $(".pickUpBTN").click(function () {
-
-        // console.log("Pickup Button Clicked");
+    function local() {
         // Setting values to be populated on click
         var materialChoice = $(".materials").val();
         var width = $(".selectWidth").val();
         var quantity = $(".quantityInput").val();
         var plateThickness = $(".selectThick").val();
 
-        // logging console choices
-        console.log(materialChoice);
-        console.log(width);
-        console.log(quantity);
-        console.log(plateThickness);
 
         // writing values to local storage
         localStorage.setItem('materialChoice', materialChoice);
         localStorage.setItem('width', width);
         localStorage.setItem('plateThickness', plateThickness);
         localStorage.setItem('quantity', quantity);
-        localStorage.setItem("Action", "Pickup");
+        localStorage.setItem("Action", action);
 
+    }
+
+
+    $(".pickUpBTN").click(function () {
+        localStorage.setItem("Action", "Pickup");
+        local();
     });
-    /////////// PICKUP BUTTON FUNCTION STOP ////////////
+
 
     $(".dropOffBTN").click(function () {
-
-        // Setting values to be populated on click
-        var materialChoice = $(".materials").val();
-        var width = $(".selectWidth").val();
-        var quantity = $(".quantityInput").val();
-        var plateThickness = $(".selectThick").val();
-
-
-        // logging console choices
-        console.log(materialChoice);
-        console.log(width);
-        console.log(quantity);
-        console.log(plateThickness);
-
-        // writing values to local storage
-        localStorage.setItem('materialChoice', materialChoice);
-        localStorage.setItem('width', width);
-        localStorage.setItem('plateThickness', plateThickness);
-        localStorage.setItem('quantity', quantity);
         localStorage.setItem("Action", "DropOff");
-
-
-
+        local();
     });
 
-
-
-
-    // $(".pickup").click(pickUp);
-    // $(".dropoff").click(dropOff);
-
-
-})
+}
