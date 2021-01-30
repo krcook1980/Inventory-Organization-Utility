@@ -1,14 +1,14 @@
 # Inventory Organization Utility
 As a worker in a steel yard, I am having trouble finding material. I would like a tool to help me deliver material to the correct place when ordered, and easily find material for use later.  Any change to inventory should notify someone in the ordering department.
 
-WHEN I select a material
-THEN I will be able to select additional parameters for that material.
-WHEN I have selected the material
-THEN I should be directed to a map with the location of that material.
-WHEN I select an email recipient
-THEN an email should be generated with a list of material, parameters, quantity, and whether it is being picked up or dropped off.
-WHEN I send the email
-THEN I should be notified that the email was sent properly.
+WHEN I select a material  
+THEN I will be able to select additional parameters for that material.  
+WHEN I have selected the material  
+THEN I should be directed to a map with the location of that material.  
+WHEN I select an email recipient  
+THEN an email should be generated with a list of material, parameters, quantity, and whether it is being picked up or dropped off.  
+WHEN I send the email  
+THEN I should be notified that the email was sent properly.  
 
 
 ## Functionality
