@@ -16,11 +16,11 @@ THEN I should be notified that the email was sent properly.
 Utilized HTML, Bulma, CSS, and jQuery to create dynamic webpages that are easy to use and read. Used the [Google Maps api](https://developers.google.com/maps) as well as [SMTPjs.com](https://www.smtpjs.com/) to email the inventory department. Our project can be found at: [Inventory Organization Utility](https://krcook1980.github.io/Inventory-Organization-Utility/)
 
 ## Contributors 
-Jared Metcalf
-Jason Jorgenson
-Kelly Cook
-Kelly Henderson
-Kelly Whiting
+Jared Metcalf  
+Jason Jorgenson  
+Kelly Cook  
+Kelly Henderson  
+Kelly Whiting  
 
 ## Resources
 - [W3 Schools](https://www.w3schools.com/)
