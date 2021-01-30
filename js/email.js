@@ -6,9 +6,6 @@ var thick = localStorage.getItem("plateThickness");
 var quantity = localStorage.getItem("quantity");
 var action = localStorage.getItem("Action");
 
-// var emailBodyText = "Hello "+recipient;
-// $(".emailBody").val(emailBodyText);
-
 $(".recipient").change(function () {
     recipient = $(".recipient").val();
     var emailBodyText = "Hello "+recipient+", "+"\n"+"Action: "+action+"\n"+"Material: "+type+"\n"+"Quantity: "+quantity+"\n"+"Width: "+width+" inches";
@@ -41,8 +38,7 @@ $(".emailButton").click(function () {
             $(".emailNotification").append("<p>"+"EMAIL ERROR"+"</p>")
         }
     })
-    //   message => console.log(message)
-    //   $(".emailNotification").append("<p>"+message+"</p>")
+ 
 
 
 });
