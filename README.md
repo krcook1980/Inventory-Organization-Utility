@@ -17,7 +17,7 @@ Utilized HTML, Bulma, CSS, and jQuery to create dynamic webpages that are easy t
 
 ## Contributors 
 Jared Metcalf  
-Jason Jorgenson  
+Jason Jorgensen  
 Kelly Cook  
 Kelly Henderson  
 Kelly Whiting  
