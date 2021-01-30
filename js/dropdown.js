@@ -25,7 +25,7 @@ $(document).ready(function () {
             $(".selectWidth").append("<option value='6'>6 inch</option>");
         }
 
-
+        $("button").attr("onclick", "window.location.href = 'maps.html'");
     })
 
     function local() {
@@ -57,4 +57,4 @@ $(document).ready(function () {
         local();
     });
 
-}
+});
