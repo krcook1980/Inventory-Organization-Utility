@@ -42,7 +42,7 @@ $(document).ready(function () {
         localStorage.setItem('width', width);
         localStorage.setItem('plateThickness', plateThickness);
         localStorage.setItem('quantity', quantity);
-        localStorage.setItem("Action", action);
+        
 
     }
 
